@@ -1,0 +1,97 @@
+
+body {
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+    --color1: hsla(349, 69%, 76%, 1);
+    --color2: hsla(207, 67%, 44%, 1);
+    --color3: hsla(200, 61%, 56%, 1);
+    --color4: hsla(187, 41%, 94%, 1);
+    --color5: hsla(170, 28%, 95%, 1);
+
+    /* --color1: hsla(45, 86%, 83%, 1);
+    --color2: hsla(135, 65%, 98%, 1);
+    --color3: hsla(315, 37%, 86%, 1);
+    --color4: hsla(45, 73%, 98%, 1);
+    --color5: hsla(224, 40%, 79%, 1); */
+    
+    --header-height: 80px;
+    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --gutter: 30px;
+    --footer-height: 25px;
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--color5);
+    color: var(--color2)
+}
+
+.has-border {
+    border: 1px solid purple;
+    padding 2px;
+}
+main {
+    min-height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 980px;
+}
+
+.sidebar-left {
+    flex-basis: 15%;
+}
+
+.sidebar-right {
+    flex-basis: 15%;
+}
+.content {
+    flex-basis:70%;
+    display:grid;
+    grid-template-areas:
+     "city-header city-header city-header"
+     "community housing jobs"
+     "services sale jobs"
+     "discussion sale jobs"
+     "discussion sale gigs" 
+     "discussion sale resumes";
+}
+
+.city-header {
+    grid-area: city-header;
+}
+.community {
+    grid-area: community;
+}
+
+.services {
+    grid-area: services;
+}
+
+.discussion {
+    grid-area: discussion;
+}
+
+.housing {
+    grid-area: housing;
+}
+
+.sale {
+    grid-area: sale;
+}
+
+.jobs {
+    grid-area: jobs;
+}
+
+.gigs {
+    grid-area: gigs;
+}
+
+.resumes {
+    grid-area: resumes;
+}
+
